@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1774407460916
+  last_edited_time = 1779630782498
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:afa85f34-39c7-4ed9-b7b2-fe4de9d4915b-1774407410307] = [groups:][instances:]
+  [loading_requirement_container_meta:66ca38a7-9087-4575-88aa-c521d562269a-1779630743277] = [groups:][instances:]
 }
 
 menu_background {
@@ -38,15 +38,17 @@ layout_action_executable_blocks {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/age_title.png
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  image_tint = #FFFFFF
-  restart_animated_on_menu_load = false
-  element_type = image
-  instance_identifier = 678df19c-1446-4c29-bf5f-eee7dc3495eb-1774379260530
+  bar_color = #5295FFFF
+  bar_texture = [source:local]/config/fancymenu/assets/age_title.png
+  background_color = #ABC8F7FF
+  background_texture = [source:local]/config/fancymenu/assets/age_title_outline.png
+  direction = right
+  progress_for_element_anchor = false
+  progress_source = {"placeholder":"game_loading_progress"}
+  value_mode = percentage
+  smooth_filling_animation = true
+  element_type = progress_bar
+  instance_identifier = d570f2d5-73be-4683-9566-c1ea5f003ef7-1778993344350
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -62,14 +64,14 @@ element {
   advanced_width = 256
   advanced_height = 51
   x = -130
-  y = -77
+  y = -23
   width = 50
   height = 50
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
-  element_loading_requirement_container_identifier = 313403fd-1bfc-4a4d-ba4f-dad05d1f93ad-1774379260530
-  [loading_requirement_container_meta:313403fd-1bfc-4a4d-ba4f-dad05d1f93ad-1774379260530] = [groups:][instances:]
+  element_loading_requirement_container_identifier = 2e548fe1-0560-431a-a0ef-3284494277f7-1778993344350
+  [loading_requirement_container_meta:2e548fe1-0560-431a-a0ef-3284494277f7-1778993344350] = [groups:][instances:]
   enable_parallax = false
   parallax_intensity_v2 = 0.5
   invert_parallax = false
@@ -119,7 +121,7 @@ vanilla_button {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1173
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = vanilla
   x = 125
@@ -145,7 +147,7 @@ vanilla_button {
   advanced_vertical_tilt_mode = false
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_mode = false
-  is_hidden = false
+  is_hidden = true
   automated_button_clicks = 0
 }
 
@@ -181,8 +183,8 @@ vanilla_button {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1366
-  auto_sizing_base_screen_height = 698
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = vanilla
   x = 125
@@ -211,4 +213,3 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
